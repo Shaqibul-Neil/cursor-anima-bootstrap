@@ -1,0 +1,314 @@
+.containers i{
+	font-size: 100px;
+	color: blue;
+}
+h1{
+	font-size: 30px;
+	color: red;
+}
+h2{
+	font-size: 26px;
+	color: green;
+}
+h3{
+	font-size: 22px;
+	color: blue;
+}
+p{
+	font-size: 16px;
+	color: black;
+}
+/*cursor start*/
+.inde{
+	overflow: hidden;
+	margin: 0 auto;
+}
+.cursor{
+	box-sizing: border-box;
+	float: left;
+	border: 2px solid blue;
+	width: 50%;
+	overflow: hidden;
+}
+.alias{
+	cursor: alias;
+}
+.all-scroll{
+	cursor: all-scroll;
+}
+.auto{
+	cursor: auto;
+}
+.cell{
+	cursor: cell;
+}
+.col-resize{
+	cursor: col-resize;
+}
+.context-menu{
+	cursor: context-menu;
+}
+.copy{
+	cursor: copy;
+}
+.crosshair{
+	cursor: crosshair;
+}
+.default{
+	cursor: default;
+}
+.e-resize{
+	cursor: e-resize;
+}
+.ew-resize{
+	cursor: ew-resize;
+}
+.grab{
+	cursor: grab;
+}
+.grabbing{
+	cursor: grabbing;
+}
+.help{
+	cursor: help;
+}
+.move{
+	cursor: move;
+}
+.n-resize{
+	cursor: n-resize;
+}
+.ne-resize{
+	cursor: ne-resize;
+}
+.nesw-resize{
+	cursor: nesw-resize;
+}
+.ns-resize{
+	cursor: ns-resize;
+}
+.nw-resize{
+	cursor: nw-resize;
+}
+.nwse-resize{
+	cursor: nwse-resize;
+}
+.no-drop{
+	cursor: no-drop;
+}
+.none{
+	cursor: none;
+}
+.not-allowed{
+	cursor: not-allowed;
+}
+.pointer{
+	cursor: pointer;
+}
+.progress{
+	cursor: progress;
+	font-size: 30px;
+}
+.row-resize{
+	cursor: row-resize;
+}
+.s-resize{
+	cursor: s-resize;
+}
+.se-resize{
+	cursor: se-resize;
+}
+.sw-resize{
+	cursor: sw-resize;
+}
+.text{
+	cursor: text;
+}
+.url{
+	cursor: url;
+}
+.w-resize{
+	cursor: w-resize;
+}
+.wait{
+	cursor: wait;
+}
+.zoom-in{
+	cursor: zoom-in;
+}
+.zoom-out{
+	cursor: zoom-out;
+}
+/*cursor end*/
+/*animation with position start*/
+.anima{
+	box-sizing: border-box;
+	float: right;
+	width: 50%;
+	border: 2px solid #ff2e0c;
+	min-height: 800px;
+	position: relative;
+}
+.box{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+}
+.box1{
+	background-color: red;
+	/*z-index: 99;*/
+	top: 0;
+	left: 0;
+}
+.box2{
+	background-color: green;
+	top: 0;
+	right: 0;
+}
+.box3{
+	background-color: blue;
+	top: 200px;
+	left: 200px;
+	-webkit-animation-name: anime1;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: normal;
+	-moz-animation-name: anime1;
+	-moz-animation-duration: 5s;
+	-moz-animation-timing-function: linear;
+	-moz-animation-delay: 1s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-direction: normal;
+	animation-name: anime1;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}
+@-webkit-keyframes anime1{
+	0% {background-color: #00059f; top: 200px; left: 200px; clip-path: circle(70%);}
+	25% {background-color: #004c4c; top: 200px; left: 0px; clip-path: circle(50%);}
+	50% {background-color: #b39eb5; top: 400px; left: 0px; clip-path: circle(35%);}
+	75% {background-color: #be29ec; top: 400px; left: 200px; clip-path: circle(50%);}
+	100% {background-color: #bac2ff; top: 200px; left: 200px; clip-path: circle(70%);}
+}
+@-moz-keyframes anime1{
+	0% {background-color: #00059f; top: 200px; left: 200px; clip-path: circle(70%);}
+	25% {background-color: #004c4c; top: 200px; left: 0px; clip-path: circle(50%);}
+	50% {background-color: #b39eb5; top: 400px; left: 0px; clip-path: circle(35%);}
+	75% {background-color: #be29ec; top: 400px; left: 200px; clip-path: circle(50%);}
+	100% {background-color: #bac2ff; top: 200px; left: 200px; clip-path: circle(70%);}
+}
+@keyframes anime1{
+	0% {background-color: #00059f; top: 200px; left: 200px; clip-path: circle(70%);}
+	25% {background-color: #004c4c; top: 200px; left: 0px; clip-path: circle(50%);}
+	50% {background-color: #b39eb5; top: 400px; left: 0px; clip-path: circle(35%);}
+	75% {background-color: #be29ec; top: 400px; left: 200px; clip-path: circle(50%);}
+	100% {background-color: #bac2ff; top: 200px; left: 200px; clip-path: circle(70%);}
+}
+.box4{
+	background-color: black;
+	top: 200px;
+	right: 200px;
+	-webkit-animation-name: anime2;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: reverse;
+	animation-name: anime2;
+	animation-duration: 5s;
+	animation-timing-function: ease;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+}
+@-webkit-keyframes anime2{
+	0% {background-color: black; top: 200px; right: 200px;}
+	25% {background-color: #004c4c; top: 200px; right: 0px;}
+	50% {background-color: #b39eb5; top: 400px; right: 0px;}
+	75% {background-color: #be29ec; top: 400px; right: 200px;}
+	100% {background-color: #bac2ff; top: 200px; right: 200px;}
+}
+@keyframes anime2{
+	0% {background-color: black; top: 200px; right: 200px; clip-path: ellipse(50% 50% at 50% 50%);}
+	25% {background-color: #004c4c; top: 200px; right: 0px; clip-path: ellipse(50% 30% at 50% 50%);}
+	50% {background-color: #b39eb5; top: 400px; right: 0px; clip-path: ellipse(50% 10% at 50% 50%);}
+	75% {background-color: #be29ec; top: 400px; right: 200px; clip-path: ellipse(50% 30% at 50% 50%);}
+	100% {background-color: #bac2ff; top: 200px; right: 200px; clip-path: ellipse(50% 50% at 50% 50%);}
+}
+.box5{
+	background-color: yellow;
+	left: 0;
+	right: 0;
+	margin: 350px auto;
+}
+.box6{
+	background-color: darkmagenta;
+	bottom: 200px;
+	right: 200px;
+	-webkit-animation-name: anime4;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate-reverse;
+	animation-name: anime4;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+}
+@keyframes anime4{
+	0% {background-color: darkmagenta; bottom: 200px; right: 200px; clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);}
+	25% {background-color: #004c4c; bottom: 200px; right: 0px; clip-path: polygon(25% 0%, 50% 50%, 25% 100%, 0% 50%);}
+	50% {background-color: #b39eb5; bottom: 400px; right: 0px; clip-path: polygon(50% 25%, 100% 75%, 50% 75%, 0% 25%)}
+	75% {background-color: #be29ec; bottom: 400px; right: 200px; clip-path: polygon(25% 0%, 50% 50%, 25% 100%, 0% 50%);}
+	100% {background-color: #bac2ff; bottom: 200px; right: 200px; clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);}
+}
+.box7{
+	background-color: aqua;
+	bottom: 200px;
+	left: 200px;
+	-webkit-animation-name: anime3;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-timing-function: ease-in;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	animation-name: anime3;
+	animation-duration: 5s;
+	animation-timing-function: ease-in;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@-webkit-keyframes anime3{
+	0% {background-color: aqua; bottom: 200px; left: 200px;}
+	25% {background-color: #004c4c; bottom: 200px; left: 0px;}
+	50% {background-color: #b39eb5; bottom: 400px; left: 0px;}
+	75% {background-color: #be29ec; bottom: 400px; left: 200px;}
+	100% {background-color: #bac2ff; bottom: 200px; left: 200px;}
+}
+@keyframes anime3{
+	0% {background-color: aqua; bottom: 200px; left: 200px;}
+	25% {background-color: #004c4c; bottom: 200px; left: 0px;}
+	50% {background-color: #b39eb5; bottom: 400px; left: 0px;}
+	75% {background-color: #be29ec; bottom: 400px; left: 200px;}
+	100% {background-color: #bac2ff; bottom: 200px; left: 200px;}
+}
+.box8{
+	background-color: orange;
+	bottom: 0;
+	left: 0;
+}
+.box9{
+	background-color: salmon;
+	bottom: 0;
+	right: 0;
+}
+/*animation with position end*/
